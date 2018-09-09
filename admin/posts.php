@@ -33,22 +33,19 @@
                         switch ($source) {
                             case 'add_post':
                                 # code...
-                                echo include "includes/add_post.php";
-                                break;
+                                include "includes/add_post.php";
+                            break;
 
-                            case '100':
-                                # code...
-                                echo "NICE 100";
-                                break;    
-                            
+                            case 'edit_post':
+                                include "includes/edit_post.php";
+                            break;    
+
                             default:
                                 # code...
                                 include "includes/view_all_posts.php";
-                                break;
+                            break;
                         }
                     ?>
-
-
                     </div>
                 </div>
                 <!-- /.row -->
