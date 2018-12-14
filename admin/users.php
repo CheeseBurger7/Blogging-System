@@ -1,8 +1,24 @@
 <?php include "includes/admin_header.php" ?>
+        
+        <?php 
+
+            if(!is_admin($_SESSION['username'])){
+
+                header("Location: index.php");
+            }
+
+
+         ?>
+
+
+
+
+
+
 
     <div id="wrapper">
-        
-  
+
+
 
         <!-- Navigation -->
  
@@ -39,16 +55,16 @@ $source = '';
 
 switch($source) {
     
-    case 'add_post';
+    case 'add_user';
     
-     include "includes/add_post.php";
+     include "includes/add_user.php";
     
     break; 
     
     
-    case 'edit_post';
+    case 'edit_user';
     
-    include "includes/edit_post.php";
+    include "includes/edit_user.php";
     break;
     
     case '200';
@@ -57,7 +73,7 @@ switch($source) {
     
     default:
     
-    include "includes/view_all_posts.php";
+    include "includes/view_all_users.php";
     
     break;
     
