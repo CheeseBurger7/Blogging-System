@@ -1,8 +1,8 @@
-<!-- Footer -->
+   <!-- Footer -->
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Copyright &copy; Blog Website 2018</p>
+                    <p>Copyright &copy; CMS by 15bit043 and 15bit046</p>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
